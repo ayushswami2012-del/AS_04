@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>TaskFlow | Smart Productivity Dashboard</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-list-check"></i>
+
+<h2>TaskFlow</h2>
+
+</div>
+
+
+<p class="tagline">
+
+Stay organized.
+Stay productive.
+
+</p>
+
+
+
+<div class="stats">
+
+
+<div class="card">
+
+<h3 id="totalTask">
+
+0
+
+</h3>
+
+<span>
+
+Total Tasks
+
+</span>
+
+</div>
+
+
+
+<div class="card">
+
+<h3 id="pendingTask">
+
+0
+
+</h3>
+
+<span>
+
+Pending
+
+</span>
+
+</div>
+
+
+
+<div class="card">
+
+<h3 id="completedTask">
+
+0
+
+</h3>
+
+<span>
+
+Completed
+
+</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="progress-section">
+
+
+<h4>
+
+Today's Progress
+
+</h4>
+
+
+
+<div class="progress-bar">
+
+<div id="progressFill">
+
+</div>
+
+</div>
+
+
+<p id="progressText">
+
+0% Completed
+
+</p>
+
+
+</div>
+
+
+
+</aside>
+
+
+
+
+
+
+<!-- MAIN CONTENT -->
+
+<main class="main-content">
+
+
+
+<div class="header">
+
+
+
+<div>
+
+<h1>
+
+📝 Smart To-Do Dashboard
+
+</h1>
+
+
+<p>
+
+Manage tasks efficiently
+
+</p>
+
+
+</div>
+
+
+
+<button id="themeToggle">
+
+🌙
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<!-- INPUT SECTION -->
+
+
+<div class="input-section">
+
+
+
+<input
+
+type="text"
+
+id="taskInput"
+
+placeholder="Enter task...">
+
+
+
+<input
+
+type="datetime-local"
+
+id="taskDate">
+
+
+
+<select id="priority">
+
+
+<option value="Low">
+
+🟢 Low
+
+</option>
+
+
+
+<option value="Medium">
+
+🟠 Medium
+
+</option>
+
+
+
+<option value="High">
+
+🔴 High
+
+</option>
+
+
+
+</select>
+
+
+
+<button id="addTask">
+
+
+<i class="fa-solid fa-plus">
+
+</i>
+
+Add Task
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<!-- SEARCH -->
+
+
+<div class="search-box">
+
+
+<i class="fa-solid fa-magnifying-glass">
+
+</i>
+
+
+<input
+
+type="text"
+
+id="searchTask"
+
+placeholder="Search tasks...">
+
+
+</div>
+
+
+
+
+
+<!-- FILTERS -->
+
+
+<div class="filters">
+
+
+<button
+
+class="active"
+
+data-filter="all">
+
+All
+
+
+</button>
+
+
+
+<button
+
+data-filter="pending">
+
+Pending
+
+
+</button>
+
+
+
+<button
+
+data-filter="completed">
+
+Completed
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<!-- TASKS -->
+
+
+<ul id="taskList">
+
+</ul>
+
+
+
+
+</main>
+
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

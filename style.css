@@ -1,0 +1,1306 @@
+/* ==================================================
+   GOOGLE FONT
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    padding:25px;
+
+    overflow-x:hidden;
+
+    background:
+    linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed,
+    #9333ea);
+
+}
+
+
+
+/* ==================================================
+   APP LAYOUT
+================================================== */
+
+.app{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+/* ==================================================
+   SIDEBAR
+================================================== */
+
+
+.sidebar{
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.10);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.25);
+
+}
+
+
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+margin-bottom:12px;
+
+}
+
+
+
+.logo i{
+
+font-size:30px;
+
+color:#ffffff;
+
+}
+
+
+
+.logo h2{
+
+font-size:28px;
+
+color:white;
+
+}
+
+
+
+.tagline{
+
+font-size:14px;
+
+line-height:1.6;
+
+color:#d1d5db;
+
+margin-bottom:30px;
+
+}
+
+
+
+/* ==================================================
+   STATS
+================================================== */
+
+.stats{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+.card{
+
+padding:18px;
+
+border-radius:18px;
+
+
+background:
+
+rgba(255,255,255,.08);
+
+
+backdrop-filter:blur(10px);
+
+
+text-align:center;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.card:hover{
+
+
+transform:translateY(-3px);
+
+
+background:
+
+rgba(255,255,255,.15);
+
+
+}
+
+
+
+.card h3{
+
+font-size:30px;
+
+color:white;
+
+margin-bottom:5px;
+
+}
+
+
+
+.card span{
+
+font-size:13px;
+
+color:#cbd5e1;
+
+}
+
+
+
+
+/* ==================================================
+   PROGRESS BAR
+================================================== */
+
+
+.progress-section{
+
+margin-top:35px;
+
+}
+
+
+
+.progress-section h4{
+
+color:white;
+
+margin-bottom:15px;
+
+font-size:15px;
+
+}
+
+
+
+.progress-bar{
+
+
+height:12px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+
+background:
+
+rgba(255,255,255,.15);
+
+
+}
+
+
+
+#progressFill{
+
+
+height:100%;
+
+width:0%;
+
+
+border-radius:30px;
+
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#22c55e,
+
+#16a34a
+
+);
+
+
+transition:.4s;
+
+
+}
+
+
+
+#progressText{
+
+
+margin-top:12px;
+
+
+font-size:14px;
+
+
+color:#d1d5db;
+
+
+}
+
+
+
+/* ==================================================
+   MAIN CONTENT
+================================================== */
+
+
+.main-content{
+
+
+flex:1;
+
+
+padding:35px;
+
+
+border-radius:30px;
+
+
+background:
+
+rgba(255,255,255,.12);
+
+
+backdrop-filter:blur(25px);
+
+
+-webkit-backdrop-filter:blur(25px);
+
+
+border:
+
+1px solid rgba(255,255,255,.15);
+
+
+
+box-shadow:
+
+
+0 20px 50px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+
+.header{
+
+
+display:flex;
+
+
+justify-content:space-between;
+
+
+align-items:center;
+
+
+margin-bottom:35px;
+
+
+}
+
+
+.header h1{
+
+
+font-size:32px;
+
+
+font-weight:700;
+
+
+color:white;
+
+
+}
+
+
+
+.header p{
+
+
+margin-top:5px;
+
+
+font-size:14px;
+
+
+color:#d1d5db;
+
+
+}
+
+
+
+
+/* ==================================================
+   THEME BUTTON
+================================================== */
+
+
+#themeToggle{
+
+
+width:50px;
+
+
+height:50px;
+
+
+border:none;
+
+
+border-radius:15px;
+
+
+cursor:pointer;
+
+
+font-size:22px;
+
+
+background:
+
+rgba(255,255,255,.15);
+
+
+color:white;
+
+
+transition:.3s;
+
+
+}
+
+
+#themeToggle:hover{
+
+
+transform:scale(1.08);
+
+
+background:
+
+
+rgba(255,255,255,.25);
+
+
+}
+
+
+
+/* ==================================================
+   INPUT AREA
+================================================== */
+
+
+.input-section{
+
+
+display:flex;
+
+
+gap:15px;
+
+
+flex-wrap:wrap;
+
+
+margin-bottom:25px;
+
+
+}
+
+
+
+.input-section input,
+
+
+.input-section select{
+
+
+padding:14px 16px;
+
+
+border:none;
+
+
+outline:none;
+
+
+border-radius:14px;
+
+
+background:white;
+
+
+font-size:14px;
+
+
+flex:1;
+
+
+min-width:180px;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.input-section input:focus,
+
+
+.input-section select:focus{
+
+
+box-shadow:
+
+
+0 0 15px rgba(99,102,241,.35);
+
+
+}
+
+
+
+#addTask{
+
+
+padding:14px 24px;
+
+
+border:none;
+
+
+cursor:pointer;
+
+
+border-radius:14px;
+
+
+font-size:14px;
+
+
+font-weight:600;
+
+
+color:white;
+
+
+background:
+
+
+linear-gradient(
+
+135deg,
+
+#6366f1,
+
+#8b5cf6
+
+);
+
+
+transition:.3s;
+
+
+}
+
+
+
+#addTask:hover{
+
+
+transform:translateY(-3px);
+
+
+box-shadow:
+
+
+0 10px 25px rgba(99,102,241,.35);
+
+
+}
+
+
+
+/* ==================================================
+   SEARCH BOX
+================================================== */
+
+
+.search-box{
+
+
+display:flex;
+
+
+align-items:center;
+
+
+gap:12px;
+
+
+padding:15px;
+
+
+border-radius:15px;
+
+
+background:white;
+
+
+margin-bottom:25px;
+
+
+}
+
+
+
+.search-box i{
+
+
+color:#6366f1;
+
+
+font-size:15px;
+
+
+}
+
+
+
+#searchTask{
+
+
+border:none;
+
+
+outline:none;
+
+
+width:100%;
+
+
+font-size:14px;
+
+
+background:none;
+
+
+}
+
+
+
+
+/* ==================================================
+   FILTER BUTTONS
+================================================== */
+
+
+.filters{
+
+
+display:flex;
+
+
+gap:12px;
+
+
+margin-bottom:30px;
+
+
+}
+
+
+.filters button{
+
+
+padding:12px 18px;
+
+
+border:none;
+
+
+cursor:pointer;
+
+
+border-radius:12px;
+
+
+font-size:14px;
+
+
+font-weight:500;
+
+
+background:
+
+
+rgba(255,255,255,.12);
+
+
+color:white;
+
+
+transition:.3s;
+
+
+}
+
+
+.filters button:hover{
+
+
+background:#6366f1;
+
+
+transform:translateY(-2px);
+
+
+}
+
+
+.filters .active{
+
+
+background:#6366f1;
+
+
+}
+/* ==========================================
+   TASK LIST
+========================================== */
+
+#taskList{
+    list-style:none;
+    max-height:650px;
+    overflow-y:auto;
+    padding-right:5px;
+}
+
+
+/* ==========================================
+   TASK CARD
+========================================== */
+
+.task-card{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.3s ease;
+
+}
+
+
+.task-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.2);
+
+}
+
+
+.task-info{
+
+    flex:1;
+
+}
+
+
+.task-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.task-title{
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+
+.task-date{
+
+    color:#cbd5e1;
+
+    font-size:13px;
+
+    margin-top:6px;
+
+}
+
+
+
+/* ==========================================
+   PRIORITY BADGES
+========================================== */
+
+.priority{
+
+    padding:4px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+.priority.low{
+
+    background:rgba(34,197,94,.2);
+
+    color:#22c55e;
+
+}
+
+
+.priority.medium{
+
+    background:rgba(245,158,11,.2);
+
+    color:#f59e0b;
+
+}
+
+
+.priority.high{
+
+    background:rgba(239,68,68,.2);
+
+    color:#ef4444;
+
+}
+
+
+
+
+/* ==========================================
+   COMPLETED TASKS
+========================================== */
+
+.completed{
+
+    opacity:.6;
+
+}
+
+
+.completed .task-title{
+
+    text-decoration:line-through;
+
+}
+
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.actions button{
+
+
+width:42px;
+
+height:42px;
+
+
+border:none;
+
+
+cursor:pointer;
+
+
+border-radius:12px;
+
+
+color:white;
+
+
+font-size:15px;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.complete-btn{
+
+
+background:#22c55e;
+
+}
+
+
+
+.edit-btn{
+
+
+background:#f59e0b;
+
+}
+
+
+
+.delete-btn{
+
+
+background:#ef4444;
+
+}
+
+
+
+.actions button:hover{
+
+
+transform:scale(1.1);
+
+
+}
+
+
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+#taskList::-webkit-scrollbar{
+
+width:6px;
+
+}
+
+
+#taskList::-webkit-scrollbar-thumb{
+
+
+background:rgba(255,255,255,.2);
+
+
+border-radius:20px;
+
+
+}
+
+
+#taskList::-webkit-scrollbar-track{
+
+
+background:transparent;
+
+
+}
+
+
+
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+
+body.dark{
+
+
+background:
+
+
+linear-gradient(
+
+135deg,
+
+#0f172a,
+
+#1e293b,
+
+#020617
+
+);
+
+
+}
+
+
+
+body.dark .sidebar,
+
+
+body.dark .main-content{
+
+
+background:
+
+rgba(15,23,42,.65);
+
+
+}
+
+
+
+body.dark .search-box,
+
+
+body.dark input,
+
+
+body.dark select{
+
+
+background:#1e293b;
+
+
+color:white;
+
+
+}
+
+
+
+body.dark .task-card{
+
+
+background:
+
+
+rgba(15,23,42,.55);
+
+
+}
+
+
+
+body.dark .task-date{
+
+
+color:#94a3b8;
+
+
+}
+
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+
+@media(max-width:900px){
+
+
+.app{
+
+
+flex-direction:column;
+
+
+}
+
+
+
+.sidebar{
+
+
+width:100%;
+
+
+}
+
+
+
+.main-content{
+
+
+padding:25px;
+
+
+}
+
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.header{
+
+
+flex-direction:column;
+
+
+gap:15px;
+
+
+align-items:flex-start;
+
+
+}
+
+
+.input-section{
+
+
+flex-direction:column;
+
+
+}
+
+
+
+.input-section input,
+
+
+.input-section select,
+
+
+#addTask{
+
+
+width:100%;
+
+
+}
+
+
+.filters{
+
+
+flex-wrap:wrap;
+
+
+}
+
+
+.task-card{
+
+
+flex-direction:column;
+
+
+align-items:flex-start;
+
+
+gap:15px;
+
+
+}
+
+
+.actions{
+
+
+width:100%;
+
+
+justify-content:flex-end;
+
+
+}
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+body{
+
+
+padding:15px;
+
+
+}
+
+
+
+.sidebar{
+
+
+padding:20px;
+
+
+}
+
+
+.main-content{
+
+
+padding:20px;
+
+
+}
+
+
+
+.logo h2{
+
+
+font-size:24px;
+
+
+}
+
+
+
+.header h1{
+
+
+font-size:26px;
+
+
+}
+
+
+
+.task-title{
+
+
+font-size:15px;
+
+
+}
+
+
+
+.actions button{
+
+
+width:38px;
+
+
+height:38px;
+
+
+}
+
+
+}
