@@ -175,13 +175,6 @@ Web Development Intern
 
 ---
 
-### Connect with me
-
-- 💼 LinkedIn: https://www.linkedin.com/in/your-profile
-- 💻 GitHub: https://github.com/ayushswami2012-del
-
----
-
 # ⭐ If you like this project
 
 Give this repository a ⭐ Star and share your feedback!
